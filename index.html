@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Blog Website</title>
+    <!--Add CSS Style-->
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <!--Navigation bar-->
+        <nav id="nav" class="nav">
+            <div class="nav-menu flex-row">
+                <div class="nav-brand">
+                    <h3>Travel diaries</h3>
+                </div>
+                <div>
+                  <ul class="nav-items">
+                    <li class="nav-link">
+                      <a href="#nav">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#post">Posts</a>
+                      </li>
+                    <li class="nav-link">
+                      <a href="#about">About me</a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                 </div>
+            </div>
+        </nav>
+        <header class="welcome">
+            <figure>
+                <img class="welcome-img" src="images/td.jpg" alt="Welcome">
+            </figure>
+        </header>
+        <!--Posts section-->
+        <section id="post" class="post">
+            <h1><b>Recent Posts</b></h1>
+            <div class="flex-container">
+                <div class="post-card">
+                    <h3><center>Kodaikanal</center></h3>
+                    <img id="card-img" src="images/kodaikanal.jpeg" alt="Project post">
+                    <p id="hh">Kodaikanal is a beautiful, very popular hill station in Tamil Nadu, India. It has beautiful views of valleys, lakes, waterfalls and grassy hills. 
+                        While most of the people flock to the famous hill stations of Ooty and Coonoor, the crowd at Kodaikanal is relatively low.</p>
+                    <span class="date-post"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Nov, 15 2020</span><br><br>
+                    <input type="button" onclick="window.open('blog.html', '_blank')" value="Read more" class="btn-button btn-readmore">
+                </div>
+                <div class="post-card">
+                    <h3><center>Kanyakumari</center></h3>
+                    <img id="card-img" src="images/kanya.png" alt="Development post">
+                    <p id="hh"> Kanyakumari is the southern tip of India.This place has been a great center for art, culture, civilization, and pilgrimage for years. It was also a famous center for commerce and trade.
+                        This gigantic statue was built by the Tamil government in honour of the Saint Thiruvalluvar which is now one of the key attraction in Kanyakumari.</p>
+                    <span class="date-post"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Nov, 10 2020</span><br><br>
+                    <input type="button" onclick="window.open('blog1.html', '_blank')" value="Read more" class="btn-button btn-readmore">
+                </div>
+                <div class="post-card">
+                    <h3><center>Taj Mahal</center></h3>
+                    <img id="card-img" src="images/tm6.jpg" alt="Agile post">
+                    <p id="hh">Taj Mahal, one of the new 7 wonders of the World.Taj Mahal is situated on the banks of river Yamuna in the North Indian city of Agra.
+                       It was commissioned by Shah Jahan, the Mughal emperor for housing the tomb of his beloved wife,
+                        Mumtaz Mahal. Hence, it is also considered as the ultimate symbol of love.</p>
+                    <span class="date-post"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Nov, 01 2020</span><br><br>
+                    <input type="button" onclick="window.open('blog2.html', '_blank')" value="Read more" class="btn-button btn-readmore">
+                </div>
+            </div>
+        </section>
+        <!--About me section-->
+        <section id="about" class="about">
+            <h1>About me</h1>
+            <div class="about-content-grid">
+                <div class="about-box">
+                  <p id="hh">Hello, This is Praveen from chennai,India. I'm thrilled to have you join me on this journey through the world's most captivating destinations.
+                    I've always had a deep passion for travel and a curiosity to explore the diverse cultures and landscapes that our planet has to offer. Over the years, I've had the privilege of visiting numerous countries, each with its unique charm and beauty.                  
+                    Through this blog, I aim to share my adventures, travel tips, and insights gained from my explorations. Whether you're a seasoned traveler or planning your first big adventure, I hope my experiences and recommendations will inspire and guide you on your own voyages.</p>
+                </div>
+            </div>
+        </section>
+        <!--Contact me-->
+        <section id="contact" class="contact">
+            <h1>Contact me and Subscribe</h1>
+            <form class="form-contact">
+                <label class="text-form" for="fullname">* Name: </label><br>
+                <input type="text" id="name" name="fullname"  placeholder="Write your lovely name" required><br><br>
+                <label class="text-form" for="email">* Email: </label><br>
+                <input type="email" id="email" name="email"  placeholder="Email address please" required><br><br>
+                <label class="text-form" for="message">Message: </label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input class="btn-button btn-submit" type="submit" value="Subscribe">
+            </form>
+        </section>
+        <!--Footer section-->
+        <footer class="footer">
+            <div id="footer-grid">
+                <div id="follow" class="footer-box">
+                    <h3>Follow me</h3>
+                    <a href="https://en-gb.facebook.com/login.php" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/?lang=en-in" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    <a href="https://instagram.com/its__praveen_here_?igshid=NGVhN2U2NjQ0Yg==" class="fa fa-instagram"></a>
+                </div>
+                <div id="arrow-up">
+                    <a href="#nav" class="fa fa-arrow-circle-up"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,542 @@
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+h1, h3, h4{
+    font-family: 'Lucida Sans', sans-serif;
+    color: blueviolet;
+    text-align: center;
+}
+p{
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+img{
+      border: none;
+}
+figcaption{
+    font-family: 'Lucida Sans', sans-serif;
+    color: blueviolet;
+    text-align: center;
+    font-size: 20px;
+}
+.container {
+    display: grid;
+    grid-template-rows: 100px 200px 1300px 350px 450px 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "nav"
+    "welcome"
+    "post"
+    "about"
+    "contact"
+    "ft";
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: gray;
+  }
+.btn-button{
+    border: none;
+    border-radius: 32px;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #ae65ea;
+    cursor: pointer;  
+    outline: none;
+}
+.nav-items{
+    display:none;
+}
+.nav-brand a {
+    padding: 16px 0;
+    display: block;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 30px;
+    color: blueviolet;
+}
+/* Welcome style*/
+.welcome {
+    text-align: center;
+}
+/* Post Style */
+.post {
+    grid-area: post;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container > div {
+    background-color: black;
+    color: white;
+    width: 325px;
+    height: 380px;
+    margin: 5px 10px;
+    text-align: center;
+    border-radius: 10%;
+} 
+.flex-container > div:hover{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.19);
+}
+#card-img{
+    width: 325px;
+    height: 150px;
+}
+.date-post{
+    font-size: 12px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.btn-readmore{
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 12px;
+}
+.btn-readmore:hover{
+    color: black;
+}
+
+/* About Style */
+#parag > p{
+    width: 200px;
+    font-size: 16px;
+    margin-left: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Contact Style */
+.contact {
+    grid-area: contact;
+    background: #edf2f4;   
+}
+.contact1 {
+    grid-area: contact;
+    background: #edf2f4;
+}
+.text-form{
+    font-family: 'Lucida Sans', sans-serif;
+}
+#name{
+    width: 200px;
+}
+#email{
+    width: 200px;
+}
+textarea{
+    width: 200px;
+    height: 150px;
+}
+.btn-submit{
+    margin-left: 20%;
+    border: solid gray;
+}
+.btn-submit:hover{
+    color: black;
+}
+.about-content-grid{
+    text-align: justify; 
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.about-box{
+    width: 550px;
+    height: auto;
+    margin: auto;
+    text-align: left; 
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+}
+/* Footer Style*/
+.footer {
+    width: 100%;
+    grid-area: ft;
+    background: blueviolet;
+    position:relative;
+}
+#footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.footer-box{
+    height: 43px;
+    width: 100%;
+}
+.footer-box > h3{
+    color: black;
+}
+#follow{
+    text-align: center;
+}
+#follow > a{
+    color: black;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#follow > a:hover{
+    color: white;
+}
+#arrow-up > a{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top:40%;
+    left:50%;
+}
+#arrow-up > a:hover{
+    color: white;
+}
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    figcaption{
+        font-size: 25px;
+    }
+    .welcome-img {
+        max-width: 100%; 
+        height: auto;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 100px 250px 1250px 350px 450px 100px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "nav"
+        "welcome"
+        "post"
+        "about"
+        "contact"
+        "ft";
+        }
+    #img-profile{
+        width: 150px;
+        height: 150px;
+        margin-top: -0.3%;
+        margin-left: 30%;
+    }
+    .form-contact {
+        margin-left: 25%;
+    }
+    #name{
+        width: 450px;
+    }
+    #email{
+        width: 450px;
+    }
+    textarea{
+        width: 450px;
+        height: 150px;
+    }
+    .btn-submit{
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+    .nav {
+        grid-area: nav;
+        background: white;
+        padding: 16px;}
+    
+    .nav-menu {
+        justify-content: space-between;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row; 
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 12px 14px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    #hh{
+        text-align: justify;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+  }
+  /* Large Screens */
+  @media (min-width:901px) {
+    img{
+        align-items: center;
+    }
+    .welcome-img {
+        max-width: 100%; 
+        height: auto;
+    }
+    figcaption{
+        font-size: 30px;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 100px 350px 650px 350px 500px 100px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "nav"
+        "welcome"
+        "post"
+        "about"
+        "contact"
+        "ft";
+    }
+    /* Navigation Style*/
+    .nav{
+        grid-area: nav;
+        background: white;
+        padding: 0 32px;
+    }
+    .nav-menu{
+        justify-content: space-between;
+    }
+    .nav-items{
+        display: flex;
+        margin: 0;
+    }
+    .nav-link{
+        padding: 24px 14px;
+        font-size: 16px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .nav-link:hover{
+        background-color: blueviolet;
+    }
+    .nav-link:hover a{   
+        color: white;
+    }
+    .nav-brand a {
+        font-size: 35px;
+    }
+    .welcome-img{
+        width:1000px; 
+        height:200px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .flex-container > div {
+        background-color: black;
+        color: white;
+        max-width: 400px;
+        height: 500px;
+        margin: 10px 10px;
+        text-align: center;
+        border-radius: 10%;
+    }
+    .flex-container > div:hover{
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.19);
+    }
+    #card-img{
+        max-width: 270px;
+        height: 150px;
+        margin-top: 5px;
+        border-radius: 0%;
+    }
+    .date-post{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn-readmore{
+        border-radius: 20px;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    #img-profile{
+        width: 200px;
+        height: 200px;
+        margin-top: -0.25%;
+        margin-left: 60%;
+    }
+    #parag > p{
+        width: 170px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .form-contact {
+        align-items: center;
+        margin-left: 30%;
+    }
+    #name{
+        width: 600px;
+    }
+    #email{
+        width: 600px;
+    }
+    textarea{
+        width: 600px;
+        height: 150px;
+    }
+    .btn-submit{
+        margin-top: 10px;
+        align-items: center;
+    }
+    /* Footer Style */       
+    #follow > a{
+        font-size: 30px;
+    }
+    #follow > a:hover{
+        color: white;
+    }  
+    #arrow-up > a{
+        font-size: 50px;
+        top:30%;
+    }
+    #hh{
+        text-align: justify;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .nav {
+        grid-area: nav;
+        background: white;
+        padding: 16px;}
+    
+    .nav-menu {
+        justify-content: space-between;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row; 
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: auto;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 599px) {
+    figcaption {
+        font-size: 20px;
+    }
+    .container {
+        display: block;
+    }
+    #img-profile {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-contact {
+        margin: 0 auto;
+    }
+    #name, #email, textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    .btn-submit {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav {
+        grid-area: nav;
+        background: white;
+        padding: 16px;}
+    
+    .nav-menu {
+        justify-content: space-between;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row; 
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 12px 14px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .nav-link:hover {
+        background-color: blueviolet;
+    }
+    
+    .nav-link:hover a {
+        color: white;
+    }
+    
+    .nav-brand a {
+        font-size: 24px;
+    }
+    .welcome-img {
+        max-width: 100%; 
+        height: auto;
+    }
+    .post-card{
+        margin-bottom: 40px;
+    }
+    .about-box{
+        max-width: 100%;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .flex-container > div {
+        background-color: black;
+        color: white;
+        max-width: 90%; 
+        height: auto; 
+        margin: 10px 0; 
+        text-align: center;
+        border-radius: 10px; 
+    }
+    
+    .flex-container > div:hover {
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.19); 
+    }
+    #hh{
+        text-align: justify;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-content-grid {
+        text-align: justify;
+        border-radius: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .about-box {
+        width: 100%; 
+        height: auto; 
+        margin: 10px; 
+        text-align: justify; 
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
